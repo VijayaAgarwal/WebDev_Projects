@@ -61,7 +61,7 @@ const getWordInfo = async(word) => {
 
 function playAudio() {
 
-    if (ct === 0) {
+    if (ct === 0 || globalThis.audio === "") {
         alert("no audio found");
     } else {
         audio.play();
